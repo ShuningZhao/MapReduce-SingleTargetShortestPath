@@ -12,7 +12,7 @@
 // the output file.
 //================================================================================
 
-package mapreduceprojects.ass2;
+package mapreduceprojects.shortestpath;
 
 //import ...
 import java.io.IOException;
