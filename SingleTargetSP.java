@@ -1,9 +1,5 @@
 //================================================================================
-// COMP9313 Assignment 2
-// By Shuning Zhao
-// z3332916
-//--------------------------------------------------------------------------------
-// The assignment has been broken down into three stages parse, main and output. 
+// This project assignment has been broken down into three stages parse, main and output. 
 // Each stage has its own mapper ,reducer and cleanup function.
 //
 // The parse stage parse the input file and outputs the results into a temporary directory.
@@ -16,7 +12,7 @@
 // the output file.
 //================================================================================
 
-package comp9313.ass2;
+package mapreduceprojects.ass2;
 
 //import ...
 import java.io.IOException;
@@ -354,7 +350,7 @@ public class SingleTargetSP {
         // ========================================
         FileSystem fs = FileSystem.get(new URI("hdfs://localhost:9000"), conf);
         // delete existing directory
-        Path tmpDir = new Path("hdfs://localhost:9000/user/comp9313/tmp");
+        Path tmpDir = new Path("hdfs://localhost:9000/user/mapreduceprojects/tmp");
         if (fs.exists(tmpDir))
             fs.delete(tmpDir, true);
     }
